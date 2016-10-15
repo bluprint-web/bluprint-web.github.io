@@ -1,0 +1,203 @@
+.mock-box {
+	position: absolute;
+	top: 81px;
+	right: 100px;
+	z-index: 2;
+	@at-root {
+		#{&}__ {
+			@at-root {
+				#{&}mockup {
+					background: url(../../images/mock003.png) no-repeat 0 0;
+					width: 210px;
+					height: 443px;
+					background-size: cover;
+					position: relative;
+				}
+				#{&}top {
+					display: flex;
+					align-items: center;
+					top: -1 * $unit2;
+					left: 0;
+					@extend %mock-box__scale-container;
+					@at-root {
+						#{&}--animate {
+							@extend %mock-box__scale-container--animate;
+						}
+					}
+				}
+				
+				#{&}left {
+					left: -1 * $unit2;
+					top: 0;
+					@extend %mock-box__scale-container;
+					@at-root {
+						#{&}--animate {
+							@extend %mock-box__scale-container--animate;
+						}
+					}
+				}
+				#{&}bottom {
+					display: flex;
+					align-items: center;
+					bottom: -1 * $unit2;
+					left: 14px;
+					@extend %mock-box__scale-container;
+					@at-root {
+						#{&}--animate {
+							@extend %mock-box__scale-container--animate;
+						}
+					}
+				}
+				#{&}right {
+					right: -1 * $unit2;
+					top: 61px;
+					@extend %mock-box__scale-container;
+					@at-root {
+						#{&}--animate {
+							@extend %mock-box__scale-container--animate;
+						}
+					}
+				}
+				#{&}v-scale {
+					width: 2px;
+					height: 10px;
+					background: #212121;
+					@at-root {
+						#{&}--blue {
+							width: 10px;
+							height: 2px;
+							background: #4297FF;
+						}
+					}
+				}
+				#{&}h-scale {
+					width: 10px;
+					height: 2px;
+					background: #212121;
+					@at-root {
+						#{&}--blue {
+							width: 2px;
+							height: 10px;
+							background: #4297FF;								
+						}
+					}		
+				}
+				#{&}top-line {
+					background: #212121;
+					height: 1px;
+					width: 0;
+					@at-root {
+						#{&}--animate {
+							width: 205px;
+							@extend %mock-box__scale-line--animate;
+						}
+					}
+				}
+				#{&}left-line {
+					background: #212121;
+					width: 1px;
+					margin-left: 4.5px;
+					height: 0;
+					@at-root {
+						#{&}--animate {
+							height: 439px;
+							@extend %mock-box__scale-line--animate;
+						}
+					}
+				}
+				#{&}bottom-line {
+					background: #4297FF;
+					height: 1px;
+					width: 0;
+					@at-root {
+						#{&}--animate {
+							width: 177px;
+							@extend %mock-box__scale-line--animate;
+						}
+					}
+				}
+				#{&}right-line {
+					background: #4297FF;
+					width: 1px;
+					margin-left: 4.5px;
+					height: 0;
+					@at-root {
+						#{&}--animate {
+							height: 317px;
+							@extend %mock-box__scale-line--animate;
+						}
+					}
+				}
+				#{&}top-text {
+					position: absolute;
+					width: 100%;
+					text-align: center;
+					top: -1 * $unit2;
+					font-size: 14px;
+					font-weight: 500;
+				}
+				
+				#{&}left-text {
+					position: absolute;
+					height: 100%;
+					top: 50%;
+					left: -1 * $unit8;
+					font-size: 14px;
+					font-weight: 500;
+				}
+				
+				#{&}right-text {
+					position: absolute;
+					height: 100%;
+					top: 50%;
+					right: -1 * $unit6;
+					font-size: 14px;
+					font-weight: 500;
+					color: #4297FF;
+				}
+				
+				#{&}bottom-text {
+					position: absolute;
+					width: 100%;
+					text-align: center;
+					bottom: -1 * $unit2;
+					width: 100%;
+					font-size: 14px;
+					font-weight: 500;
+					color: #4297FF;
+				}
+			}
+		}
+	}
+	
+	//responsive
+	
+	@include x-small {
+		position: static;
+	@at-root {
+		#{&}__ {
+			@at-root {
+				#{&}mockup {
+					margin: 0 auto;
+					}
+					}
+					}
+					}
+	}
+}
+
+%mock-box__scale-container {
+	position: absolute;
+	opacity: 0;
+}
+
+%mock-box__scale-container--animate {
+	transition: 0.2s ease-out;
+	opacity: 1;
+}
+
+
+%mock-box__scale-line--animate {
+	transition: 0.7s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+

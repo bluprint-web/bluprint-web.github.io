@@ -1,0 +1,21 @@
+@import '../../../node_modules/sanitize.css/lib/sanitize.scss';
+@import 'config';
+@import 'components/global-header';
+@import 'components/about';
+@import 'components/scale';
+@import 'components/mock-box';
+@import 'components/tools';
+@import 'components/stylus';
+@import 'components/download';
+@import 'components/global-footer';
+
+
+body {
+	font-size: 16px;
+	font-family: "Helvetica Neue", sans-serif;
+	background: #212121;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}

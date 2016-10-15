@@ -1,0 +1,78 @@
+.download {
+	background: #191919;
+	color: #fff;
+	text-align: center;
+	padding: $unit6 0 $unit4 0;
+	@at-root {
+		#{&}__ {
+			@at-root {
+				#{&}wrapper {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: $unit4;
+				}
+				#{&}title {
+					font-size: 40px;
+					font-weight: 500;
+					height: $unit6 - 2;
+				}
+				#{&}subtitle {
+					font-size: 20px;
+					color: #aaa;
+					font-weight: 100;
+				}
+				#{&}icon {
+					width: 120px;
+					height: 120px;
+					margin-right: $unit3;
+				}
+				#{&}right {
+					text-align: left;
+				}
+				#{&}logo {
+					width: auto;
+					height: 38px;
+					display: block;
+					margin: 0;
+				}
+				
+				#{&}app-store {
+					display: inline-block;
+				}
+				#{&}store-img {
+					width: auto;
+					height: $unit6;
+				}
+			}
+		}
+	}
+	//responsive
+	@include x-small {
+		padding: $unit6 0 $unit4 0;
+		@at-root {
+			#{&}__ {
+				@at-root {
+					#{&}title {
+						font-size: 24px;
+						font-weight: 500;
+						height: $unit4;
+					}
+					#{&}subtitle {
+						font-size: 14px;
+						font-weight: 200;
+						height: $unit5;
+					}
+					#{&}twitter {
+						font-size: 14px;
+					}
+					#{&}icon {
+						width: $unit6 * 2;
+						height: $unit6 * 2;
+						margin-bottom: $unit3;
+					}
+				}
+			}
+		}
+	}
+}

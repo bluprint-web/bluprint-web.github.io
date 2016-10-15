@@ -1,0 +1,126 @@
+.scale {
+	background: #fff;
+	color: #191919;
+	display: flex;
+	align-items: center;
+	@at-root {
+		#{&}__ {
+			@at-root {
+				#{&}image-box {
+					margin-top: $unit6;
+					width: 465px;
+					height: 576px;
+					position: relative;
+					margin-right: $unit6;
+				}
+				#{&}capture {
+					background: url(../../images/mock002.png) no-repeat 0 0;
+					width: 100%;
+					height: 100%;
+					background-size: 100% auto;
+					@at-root {
+						#{&}--animate {
+							transition: $scroll-animate-duration ease-out;
+							opacity: 0.1;
+						}
+					}
+				}
+				
+				#{&}title {
+					@extend %subtitle-left;
+				}
+				
+				#{&}text-box {
+					flex: 1;
+					margin-right: $unit6; 
+				}
+				#{&}text {
+					@extend %text;
+					margin-bottom: $unit2;
+				}
+				#{&}caption {
+					font-size: 14px;
+					font-weight: 300;
+				}
+			}
+		}
+	}
+	//responsive
+	@include middle {
+		
+		@at-root {
+			#{&}__ {
+				#{&}image-box {
+					margin-right: $unit2;
+					width: 400px;
+				}
+				#{&}title {
+					margin-bottom: $unit2;
+				}
+				#{&}capture {
+					background-size: 465px auto;
+					background-position: 100% 0;
+				}
+				#{&}text-box {
+					margin-right: $unit2; 
+				}
+				#{&}text {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	@include small {
+		display: block;
+		padding-bottom: $unit4;
+		@at-root {
+			#{&}__ {
+				@at-root {
+					#{&}image-box {
+						width: 465px;
+						height: 616px;
+						margin-bottom: $unit3;
+					}
+					#{&}title {
+						margin: 0 $unit4;
+					}
+					#{&}caption {
+						margin: 0 $unit4;
+					}
+				#{&}text {
+					margin-left: $unit4;
+					margin-right: $unit4;
+				}
+				}
+			}
+		}
+	}
+	@include x-small {
+		display: block;
+		padding-bottom: $unit4;
+		@at-root {
+			#{&}__ {
+				@at-root {
+					#{&}image-box {
+						margin: 0;
+						width: 100%;
+						height: auto;
+						transform: scale(0.8);
+					}
+					#{&}title {
+						margin-bottom: $unit2;
+					}
+							
+					#{&}capture {
+						width: 0;
+						height: 0;
+					}
+					#{&}text-box {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+.global-footer {
+	background: #191919;
+	padding: $unit3 0;
+	text-align: center;
+	color: #fff;
+	@at-root {
+		#{&}__ {
+			@at-root {
+				#{&}wrapper {
+					@extend %content-wrapper;
+				}
+				#{&}title {
+					font-weight: 200;
+					font-size: 14px;
+					color: #777;
+					height: $unit3;
+				}
+				#{&}company {
+					display: block;
+				}
+				#{&}logo {
+					height: 15px;
+					width: auto;
+					display: inline-block;
+					margin-left: 2px;
+					opacity: .4;
+				}
+			}
+		}
+	}
+	//responsive
+	@include middle {
+		@at-root {
+			#{&}__ {
+				@at-root {
+					#{&}wrapper {
+						padding: 0 $unit4;
+					}
+				}
+			}
+		}
+	}
+	@include x-small {
+		padding: $unit3 0;
+		@at-root {
+			#{&}__ {
+				@at-root {
+					#{&}wrapper {
+						display: block;
+					}
+					
+					#{&}company {
+						text-align: left;
+						margin-top: $unit2;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}

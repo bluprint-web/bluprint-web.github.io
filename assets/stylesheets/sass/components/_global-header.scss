@@ -1,0 +1,73 @@
+.global-header {
+	background: #212121;
+	color: #fff;
+	padding: $unit4 0;
+	@extend %content-wrapper;
+	display: flex;
+	@at-root {
+		#{&}__ {
+			@at-root {
+				#{&}nav {
+					display: block;
+				}
+				#{&}title {
+					flex: 1;
+				}
+				#{&}logo {
+					width: auto;
+					height: 24px;
+					display: block;
+				}
+				#{&}contact {
+					@extend %global-header__link;
+					margin-right: $unit2;
+					&:before {
+						background: url(../../images/email.svg) no-repeat 0 0;
+						top: 2px;
+					}
+				}
+				#{&}twitter {
+					@extend %global-header__link;
+					&:before {
+						background: url(../../images/twitter.png) no-repeat 0 0;
+						top: 4px;
+					}
+				}
+				
+			}
+		}
+	}
+	//responsive
+	@include middle {
+		margin: 0 $unit4;
+	}
+	@include x-small {
+		@at-root {
+			#{&}__ {
+				@at-root {
+				}
+			}
+		}
+	}
+}
+
+
+%global-header__link {
+	color: #999;
+	font-weight: 200;
+	transition: .15s linear;
+	font-size: 14px;
+	&:hover {
+		text-decoration: none;
+		opacity: 0.8;
+	}
+	&:before {
+		content: "";
+		display: inline-block;
+		width: $unit2;
+		height: $unit2;
+		background-size: $unit2;
+		margin-right: $unit - 1;
+		position: relative;
+	}
+}

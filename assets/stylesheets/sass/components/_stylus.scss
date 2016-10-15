@@ -1,0 +1,41 @@
+.stylus {
+	background: #999;
+	color: #fff;
+	padding: $unit8 0;
+	@at-root {
+		#{&}__ {
+			@at-root {
+				#{&}wrapper {
+					@extend %content-wrapper;
+				}
+				#{&}title {
+					@extend %subtitle-center;
+					margin-bottom: $unit6;
+				}
+				#{&}img {
+					width: 100%;
+					height: auto;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	@include middle {
+		@at-root {
+			#{&}__ {
+				@at-root {
+					#{&}wrapper {
+						box-sizing: border-box;
+						padding: 0 $unit4;
+					}
+					#{&}title {
+						margin-bottom: $unit4;
+					}
+				}
+			}
+		}
+	}
+	@include x-small {
+		padding: $unit3 0;
+	}
+}

@@ -1,0 +1,105 @@
+.tools {
+	background: #6E6E6E;
+	color: #fff;
+	padding-bottom: $unit4;
+	@at-root {
+		#{&}__ {
+			@at-root {
+				#{&}wrapper {
+					@extend %content-wrapper;
+				}
+				#{&}capture {
+					background: url(../../images/mock004.png) no-repeat 50% 100%;
+					background-size: $content-width 170px;
+					max-width: $content-width;
+					height: 170px;
+					margin-bottom: $unit4;
+				}
+				
+				#{&}box {
+					display: flex;
+				}
+				#{&}stencil {
+					background: url(../../images/stencil.png) no-repeat 0 0;
+					width: 276px;
+					height: 379px;
+					background-size: contain;
+				}
+				
+				#{&}title {
+					@extend %subtitle-left;
+				}
+				
+				#{&}text-box {
+					flex: 1;
+					margin-right: $unit4; 
+				}
+				#{&}text {
+					@extend %text;
+					margin-bottom: $unit2;
+				}
+				#{&}caption {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	//responsive
+	@include middle {
+		@at-root {
+			#{&}__ {
+				@at-root {
+					#{&}stencil {
+						margin-right: $unit2;
+					}
+					#{&}text-box {
+						margin-left: $unit2;
+					}
+					#{&}text {
+						margin-left: 0;
+						margin-right: 0;
+					}
+				}
+			}
+		}
+		
+	}
+	@include small {
+		@at-root {
+			#{&}__ {
+				@at-root {
+					#{&}box {
+						display: block;
+					}
+					#{&}text-box {
+						margin-left: 0;
+						margin-right: 0;
+					}
+					#{&}title {
+						margin-left: $unit4;
+						margin-right: $unit4;
+					}
+					#{&}text {
+						margin-bottom: $unit3;
+						margin-left: $unit4;
+						margin-right: $unit4;
+					}
+					#{&}stencil {
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+	@include x-small {
+		@at-root {
+			#{&}__ {
+				@at-root {
+					#{&}title {
+						margin-bottom: $unit2;
+					}
+				}
+			}
+		}
+	}
+}
