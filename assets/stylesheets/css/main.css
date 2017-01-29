@@ -458,22 +458,22 @@
 
 .global-footer {
   background: #333;
-  padding: 24px 0;
+  padding: 16px 0;
   text-align: center;
   color: #fff; }
-  .global-footer__title {
+  .global-footer__company {
     font-weight: 200;
     font-size: 14px;
     color: #777;
-    height: 32px; }
-  .global-footer__company {
-    display: block; }
+    display: block;
+    font-style: normal; }
   .global-footer__logo {
-    height: 32px;
+    height: 12px;
     width: auto;
-    display: inline-block;
-    margin-left: 2px;
-    opacity: .4; }
+    margin: 0 4px;
+    opacity: .4;
+    position: relative;
+    bottom: 1px; }
   @media (max-width: 960px) {
     .global-footer__wrapper {
       padding: 0 32px; } }

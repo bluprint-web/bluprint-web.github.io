@@ -1,6 +1,6 @@
 .global-footer {
 	background: #333;
-	padding: $unit3 0;
+	padding: $unit1 0;
 	text-align: center;
 	color: #fff;
 	@at-root {
@@ -9,21 +9,20 @@
 				#{&}wrapper {
 					@extend %content-wrapper;
 				}
-				#{&}title {
+				#{&}company {
 					font-weight: 200;
 					font-size: 14px;
 					color: #777;
-					height: $unit4;
-				}
-				#{&}company {
 					display: block;
+					font-style: normal;
 				}
 				#{&}logo {
-					height: 32px;
+					height: 12px;
 					width: auto;
-					display: inline-block;
-					margin-left: 2px;
+					margin:0 4px;
 					opacity: .4;
+					position: relative;
+					bottom: 1px;
 				}
 			}
 		}
