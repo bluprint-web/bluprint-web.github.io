@@ -1,7 +1,8 @@
 .tools {
-	background: #6E6E6E;
-	color: #fff;
-	padding-bottom: $unit4;
+	//background: #6E6E6E;
+	padding-bottom: $unit5;
+	border-bottom: 1px solid #BFBFBF;
+
 	@at-root {
 		#{&}__ {
 			@at-root {

@@ -1,6 +1,6 @@
 .about {
-	background: #1A67C8;
-	color: #fff;
+	//background: #1A67C8;
+	border-bottom: 1px solid #BFBFBF;
 	position: relative;
 	padding-bottom: $unit6;
 	&:before {
@@ -10,7 +10,7 @@
 		top: 0;
 		width: 100%;
 		height: 341px;
-		background: #212121;
+		//background: #212121;
 		z-index: 0;
 		display: block;
 	}
@@ -24,11 +24,12 @@
 					max-width: 100%;
 					height: auto;
 					position: relative;
-					margin-bottom: $unit4;
+					margin-bottom: $unit2;
 					display: block;
 				}
 				#{&}title {
 					@extend %subtitle-center;
+					font-size: 28px;
 					@include middle {
 						text-align: left;	
 						margin: 0 $unit4;
@@ -36,6 +37,12 @@
 				}
 				#{&}text {
 					@extend %text;
+				}
+				#{&}app-store {
+					display: block;
+					width: 162px;
+					height: 48px;
+					margin: 0 auto;
 				}
 			}
 		}

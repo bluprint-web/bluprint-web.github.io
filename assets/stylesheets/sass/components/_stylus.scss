@@ -1,7 +1,6 @@
 .stylus {
-	background: #999;
-	color: #fff;
-	padding: $unit8 0;
+	//background: #999;
+	padding: $unit5 0 $unit8 0;
 	@at-root {
 		#{&}__ {
 			@at-root {

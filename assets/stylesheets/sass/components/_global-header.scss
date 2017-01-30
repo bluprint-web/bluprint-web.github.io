@@ -1,5 +1,5 @@
 .global-header {
-	background: #212121;
+	//background: #212121;
 	color: #fff;
 	padding: $unit4 0;
 	@extend %content-wrapper;
@@ -23,14 +23,13 @@
 					margin-right: $unit2;
 					&:before {
 						background: url(../../images/email.svg) no-repeat 0 0;
-						top: 2px;
 					}
 				}
 				#{&}twitter {
 					@extend %global-header__link;
 					&:before {
 						background: url(../../images/twitter.png) no-repeat 0 0;
-						top: 4px;
+						top: 1px;
 					}
 				}
 				
