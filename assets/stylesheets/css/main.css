@@ -15,8 +15,7 @@
   font-size: 36px;
   min-height: 64px;
   font-weight: 200;
-  font-family: DIN Alternate;
-  color: #BFBFBF; }
+  font-family: DIN Alternate; }
   @media (max-width: 960px) {
     .scale__title, .tools__title, .about__title, .stylus__title {
       min-height: 56px; } }
@@ -494,7 +493,7 @@ html, body {
 body {
   font-size: 16px;
   font-family: "Helvetica Neue", sans-serif;
-  background: #f1f1f1;
+  background: url(../../images/bg.svg) repeat 0 0 #fff;
   color: #191919; }
 
 h1, h2, h3, h4, h5, h6 {
