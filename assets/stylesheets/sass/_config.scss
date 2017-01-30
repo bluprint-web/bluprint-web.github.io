@@ -60,7 +60,8 @@ $scroll-animate-duration: 0.3s;
 	font-size: 36px;
 	min-height: $unit8;
 	font-weight: 200;
-	
+	font-family: DIN Alternate;
+	color: #BFBFBF;
 	@include middle {
 		min-height: $unit7;
 	}

@@ -14,7 +14,9 @@
 .scale__title, .tools__title, .about__title, .stylus__title {
   font-size: 36px;
   min-height: 64px;
-  font-weight: 200; }
+  font-weight: 200;
+  font-family: DIN Alternate;
+  color: #BFBFBF; }
   @media (max-width: 960px) {
     .scale__title, .tools__title, .about__title, .stylus__title {
       min-height: 56px; } }
@@ -463,14 +465,14 @@
   .global-footer__company {
     font-weight: 200;
     font-size: 14px;
-    color: #777;
+    color: #BFBFBF;
     display: block;
     font-style: normal; }
   .global-footer__logo {
     height: 12px;
     width: auto;
     margin: 0 4px;
-    opacity: .4;
+    opacity: .2;
     position: relative;
     bottom: 1px; }
   @media (max-width: 960px) {
