@@ -10,6 +10,10 @@
 @import 'components/global-footer';
 
 
+
+html,body {
+	height: 100%;
+}
 body {
 	font-size: 16px;
 	font-family: "Helvetica Neue", sans-serif;
@@ -25,4 +29,10 @@ figure {
 }
 p {
 	margin: 0;
+}
+
+.wrapper {
+	//margin-bottom: $unit4;
+	min-height: 100%;
+	box-sizing: border-box;
 }

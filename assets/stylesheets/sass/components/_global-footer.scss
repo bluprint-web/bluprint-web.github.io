@@ -1,8 +1,12 @@
 .global-footer {
-	background: #333;
-	padding: $unit2 0;
+	//background: #333;
+	height: $unit4;
 	text-align: center;
-	color: #fff;
+	//color: #fff;
+	position: relative;
+	bottom: $unit4;
+	left: 0;
+	width: 100%;
 	@at-root {
 		#{&}__ {
 			@at-root {

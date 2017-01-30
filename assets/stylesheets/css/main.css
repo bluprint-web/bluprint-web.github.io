@@ -78,7 +78,6 @@
     position: relative; }
 
 .about {
-  border-bottom: 1px solid #BFBFBF;
   position: relative;
   padding-bottom: 48px; }
   .about:before {
@@ -455,10 +454,12 @@
         margin-bottom: 24px; } }
 
 .global-footer {
-  background: #333;
-  padding: 16px 0;
+  height: 32px;
   text-align: center;
-  color: #fff; }
+  position: relative;
+  bottom: 32px;
+  left: 0;
+  width: 100%; }
   .global-footer__company {
     font-weight: 200;
     font-size: 14px;
@@ -485,6 +486,9 @@
         margin-top: 16px;
         font-size: 12px; } }
 
+html, body {
+  height: 100%; }
+
 body {
   font-size: 16px;
   font-family: "Helvetica Neue", sans-serif;
@@ -500,3 +504,7 @@ figure {
 
 p {
   margin: 0; }
+
+.wrapper {
+  min-height: 100%;
+  box-sizing: border-box; }
